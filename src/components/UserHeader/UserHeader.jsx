@@ -7,6 +7,7 @@ import { Avatar, Dropdown } from 'antd'
 import UserIcon from '../Icon/UserIcon'
 import LogoutIcon from '../Icon/LogoutIcon'
 import FormSeachProduct from '../Form/FormSeachProduct'
+import WrapperSuggestJob from '../Wrapper/WrapperSuggestJob'
 const items = [
   {
     label: <Link className='flex space-x-2 items-center'><UserIcon /><span>Thông tin cá nhân</span></Link>,
@@ -46,7 +47,10 @@ const UserHeader = () => {
             <Link to={path.homePage}>
               <LogoIcon />
             </Link>
-            <FormSeachProduct />
+
+            <WrapperSuggestJob>
+              <FormSeachProduct />
+            </WrapperSuggestJob>
           </div>
           <nav className="header_navigate space-x-5">
             {checkUserLogin()}
