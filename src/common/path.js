@@ -4,4 +4,5 @@ export const path = {
   signUp: "/sign-up",
   signIn: "/dang-nhap",
   listJob: "/list-job",
+  admin: "/admin",
 };
