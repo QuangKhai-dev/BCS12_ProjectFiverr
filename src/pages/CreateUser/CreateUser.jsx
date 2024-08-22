@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import InputCustom from '../../components/Input/InputCustom'
 import { Select } from 'antd'
 import { useDispatch, useSelector } from 'react-redux'
-import { getAllSkillApi } from '../../redux/skillSlice'
-import { nguoiDungService } from '../../service/nguoiDung.service'
+
 
 const CreateUser = () => {
   const { infoUser } = useSelector(state => state.authSlice)
